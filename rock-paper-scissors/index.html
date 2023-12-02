@@ -11,8 +11,16 @@
 <body>
   <div class="header">ROCK PAPPER SCISSORS</div>
     <div class="side-block left-side">
+      <div class="Game-part">
+        <div>
+        <p class="part-text">Игра в партии</p>
+        <input type="text" class="input-game">
+        <button class="button-block">Применить</button>
+        </div>
+      </div>
       <div class="score">
         <div>
+          <p class="score-p">Счет по партиям</p>
           <div id="playerScore">Player: <span id="playerValue">0</span></div>
           <div id="computerScore">Computer: <span id="computerValue">0</span></div>
           <button id="restartButton">Обновить статистику</button>
@@ -47,10 +55,31 @@
 
   <!-- Конец игры -->
 
-  <div class="side-block right-side"></div>
+  <div class="side-block right-side">
+    <div class="reg-block">
+      <div>
+      <p class="name-text">Твой никнейм</p>
+      <input type="text" placeholder="Введите Никнейм" class="input-game">
+      <button class="button-block">Войти</button>
+      </div>
+    </div>
+    <div class="top-player">
+      <div>
+      <p class="top-text">Лучшие игроки</p>
+      <div class="top-player-block">
+        <span>-</span>
+        <span>-</span>
+        <span>-</span>
+        <span>-</span>
+        <span>-</span>
+      </div>
+      </div>
+    </div>
+  </div>
   
 
 
   <script src="app.js"></script>
+  <script src="backend/index.js"></script>
 </body>
 </html>
