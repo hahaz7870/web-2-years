@@ -10,7 +10,18 @@
 </head>
 <body>
   <div class="header">ROCK PAPPER SCISSORS</div>
+    <div class="side-block left-side">
+      <div class="score">
+        <div>
+          <div id="playerScore">Player: <span id="playerValue">0</span></div>
+          <div id="computerScore">Computer: <span id="computerValue">0</span></div>
+          <button id="restartButton">Обновить статистику</button>
+        </div>
+      </div>
+    </div>
 
+
+  <!-- Игра -->
   <div class="game">
     <div class="items-menu">
 
@@ -26,20 +37,19 @@
   
     <div class="menu">
       <div class="play">
-        <div class="score"><div>Computer Score: 0 - Player Score: 0</div></div>
-        <div class="round">Round result:
+        <div class="round">Результат раунда:
           <span></span>
         </div>
       </div>
       <div class="finish"></div>
-      <button id="restartButton">Restart game</button>
     </div>
   </div>
+
+  <!-- Конец игры -->
+
+  <div class="side-block right-side"></div>
   
-  <div class="footer">
-    <a href="https://www.flaticon.com/authors/freepik"
-      title="scissors icons">Icons created by Freepik - Flaticon</a>
-  </div>
+
 
   <script src="app.js"></script>
 </body>
